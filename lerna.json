@@ -1,0 +1,24 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "version": "independent",
+    "npmClient": "yarn",
+    "npmClientArgs": [
+        "--no-optional"
+    ],
+    "useWorkspaces": true,
+    "command": {
+        "version": {
+            "allowBranch": "master",
+            "ignoreChanges": [
+                "**/dist/**",
+                "**/lib/**",
+                "**/tests/**",
+                "**/*.test.*",
+                "**/*.md",
+                "**/*.tsBuildInfo"
+            ]
+        }
+    }
+}
